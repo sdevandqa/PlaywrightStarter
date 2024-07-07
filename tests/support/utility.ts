@@ -1,6 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
 
-// non arrow
 export async function invalidForgottenPasswordSubmission(page: Page) {
     await page.locator('[name="username"]').fill("fakeemail4@email.com")
     await page.locator('text=Next').click()
